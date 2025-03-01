@@ -25,8 +25,6 @@ app.get("/", (req, res) => {
   res.send("🚀 Express Server is Running with ES Modules!");
 });
 
-
-
 const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String, required: true },
@@ -87,5 +85,5 @@ app.post("/login", async (req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 7000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
